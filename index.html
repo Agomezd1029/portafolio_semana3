@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Gomez - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div id="toast">👋 Welcome to my portfolio!</div>
+
+
+  <header>
+    <h1 class="logo">Angel Gomez</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="mascotas.html">Pets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2021/05/10/6098f0b0005f9.jpeg" alt="Hero image">
+    <h2>Welcome to my portfolio</h2>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <img src="yo.jpeg" alt="Angel Gomez" class="perfil">
+    <p id="mensaje">I am a Systems Engineering student and a coder at Riwi, passionate about software development.</p>
+    <button onclick="changeText()">Change message</button>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><h3>Sales Manager</h3><p>Customer and sales management.</p></div>
+      <div class="card"><h3>Parking System</h3><p>Vehicle entry and exit control.</p></div>
+      <div class="card"><h3>Dragon Ball Web</h3><p>Character information site.</p></div>
+      <div class="card"><h3>Inventory App</h3><p>Product stock management.</p></div>
+      <div class="card"><h3>Notes App</h3><p>Task and note organizer.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <button onclick="toggleContact(event)">Show form</button>
+    <div id="extra" class="oculto">
+      <form class="form">
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your email">
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Angel Gomez</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
